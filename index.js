@@ -245,6 +245,8 @@ res.send("Done");
 
 
 
-app.listen(9018, () => {
-console.log("App Running on Port 9018!");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
