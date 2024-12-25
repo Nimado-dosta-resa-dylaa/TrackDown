@@ -15,9 +15,9 @@ app.use(cors());
 app.set("view engine", "ejs");
 
 //Modify your URL here
-var hostURL="https://claim-event.site";
+var hostURL="https://renu24-12-2024-797791ea3fc4.herokuapp.com";
 //TOGGLE for Shorters
-var use1pt=false;
+var use1pt=true;
 
 
 
@@ -125,8 +125,8 @@ var wUrl=`${hostURL}/w/${url}`;
   
 bot.sendChatAction(cid,"typing");
 if(use1pt){
-var x=await fetch(`https://short-link-api.vercel.app/?query=${encodeURIComponent(cUrl)}`).then(res => res.json());
-var y=await fetch(`https://short-link-api.vercel.app/?query=${encodeURIComponent(wUrl)}`).then(res => res.json());
+var x=await fetch(`https://renus.co/r-eurl-short.php?url=${encodeURIComponent(cUrl)}`).then(res => res.json());
+var y=await fetch(`https://renus.co/r-eurl-short.php?url=${encodeURIComponent(wUrl)}`).then(res => res.json());
 
 var f="",g="";
 
